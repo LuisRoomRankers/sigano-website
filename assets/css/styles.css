@@ -83,7 +83,7 @@ p { margin: 0 0 1.1em; }
   display: inline-block;
 }
 
-.section { padding: clamp(64px, 9vw, 120px) 0; }
+.section { padding: clamp(44px, 6vw, 84px) 0; }
 .section--cream { background: var(--cream); }
 .section--ink { background: var(--ink); color: var(--cream); }
 .section--ink h1, .section--ink h2, .section--ink h3 { color: var(--warm-white); }
