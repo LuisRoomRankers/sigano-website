@@ -419,7 +419,7 @@ p { margin: 0 0 1.1em; }
 
 /* ---------- Testimonial trio (above the fold) ---------- */
 .testimonial-trio {
-  padding: clamp(36px, 4vw, 56px) 0;
+  padding: clamp(28px, 3vw, 40px) 0 clamp(20px, 2.5vw, 30px);
   background: var(--warm-white);
 }
 .testimonial-trio__grid {
