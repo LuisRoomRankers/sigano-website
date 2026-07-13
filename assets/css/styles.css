@@ -1410,3 +1410,31 @@ html, body { overflow-x: hidden; }
   .venue-wall { gap: 20px 28px; }
   .venue-logo { height: 34px; max-width: 130px; }
 }
+
+
+/* ---- Music page: audio playlist + social hub ---- */
+.playlist { margin-top: 40px; display: flex; flex-direction: column; gap: 0; }
+.track {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 18px 0; border-bottom: 1px solid var(--hairline);
+}
+.track:first-child { border-top: 1px solid var(--hairline); }
+.track__meta { display: flex; align-items: baseline; gap: 16px; }
+.track__num { font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.18em; color: var(--gold); }
+.track__title { font-family: var(--font-display); font-size: 1.35rem; color: var(--ink); }
+.track__audio { height: 34px; max-width: 320px; width: 100%; }
+.social-hub { margin-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.social-card {
+  display: flex; flex-direction: column; gap: 6px;
+  padding: 30px 28px; border: 1px solid var(--hairline); border-radius: var(--radius);
+  background: var(--warm-white); transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.social-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(76,78,39,0.10); }
+.social-card__net { font-family: var(--font-display); font-size: 1.6rem; color: var(--ink); }
+.social-card__handle { font-size: 0.95rem; color: var(--muted); }
+.social-card__cta { margin-top: 12px; font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--gold); }
+@media (max-width: 720px) {
+  .social-hub { grid-template-columns: 1fr; }
+  .track { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .track__audio { max-width: 100%; }
+}
