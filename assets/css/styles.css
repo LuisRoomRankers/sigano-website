@@ -1398,7 +1398,7 @@ html, body { overflow-x: hidden; }
   margin-top: 8px;
 }
 .venue-logo {
-  height: 44px;
+  height: 52px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
@@ -1408,7 +1408,7 @@ html, body { overflow-x: hidden; }
 .venue-logo:hover { filter: grayscale(0) opacity(1); }
 @media (max-width: 720px) {
   .venue-wall { gap: 20px 28px; }
-  .venue-logo { height: 34px; max-width: 130px; }
+  .venue-logo { height: 40px; max-width: 130px; }
 }
 
 
