@@ -215,6 +215,7 @@
     <h2 id="check-date-title">Check My Date</h2>
     <p>Five quick fields. Sergio personally reviews every inquiry — you'll hear back within 24 hours with availability and a custom proposal for your venue.</p>
     <form id="check-date-form" novalidate>
+      <input type="hidden" name="inquiry_source" value="contact" />
       <div class="form-field"><label for="cd-name">Your name</label><input id="cd-name" type="text" name="name" required /></div>
       <div class="form-field"><label for="cd-email">Email</label><input id="cd-email" type="email" name="email" required /></div>
       <div class="form-field"><label for="cd-date">Event date</label><input id="cd-date" type="date" name="event_date" required /></div>
@@ -222,7 +223,7 @@
         <label for="cd-type">Event type</label>
         <select id="cd-type" name="event_type" required>
           <option value="">Select one</option>
-          <option selected>Wedding — full day</option>
+          <option>Wedding — full day</option>
           <option>Wedding — ceremony only</option>
           <option>Cocktail hour</option>
           <option>Corporate event</option>
