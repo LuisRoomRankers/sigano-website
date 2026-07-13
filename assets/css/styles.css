@@ -1386,3 +1386,27 @@ html, body { overflow-x: hidden; }
   font-family: var(--font-display); font-style: italic; font-size: 1.35rem; color: var(--ink-soft);
 }
 @media (max-width: 860px) { .pillars { grid-template-columns: 1fr; } }
+
+
+/* ---- Venue logo wall (Private Events — logos version) ---- */
+.venue-wall {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 28px 44px;
+  margin-top: 8px;
+}
+.venue-logo {
+  height: 44px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  filter: grayscale(1) opacity(0.62);
+  transition: filter 0.3s var(--ease);
+}
+.venue-logo:hover { filter: grayscale(0) opacity(1); }
+@media (max-width: 720px) {
+  .venue-wall { gap: 20px 28px; }
+  .venue-logo { height: 34px; max-width: 130px; }
+}
